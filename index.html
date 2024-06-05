@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav {
+        background-color: lightcyan;
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style: none;
+        /* border: 2px solid black; */
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 10px 50px 10px 0;
+        font-size: 30px;
+
+        cursor: pointer;
+
+    }
+
+    button {
+        cursor: pointer;
+        border-radius: 10px;
+        margin: auto;
+        border: none;
+        padding: 10px 20px;
+        font-size: larger;
+
+    }
+
+
+    .banner {
+        text-align: center;
+        border-radius: 1px solid red;
+        background-color: linen;
+        height: 300px;
+        /* border-radius: 10px; */
+        padding: 90px 0;
+
+    }
+
+    .banner h1 {
+        font-size: xx-large;
+    }
+
+    .banner span {
+        color: brown;
+
+    }
+
+    .banner h2 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .banner p {
+        margin-top: 10px;
+        font-size: larger;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #btn {
+        /* border: 1px solid green; */
+        width: 400px;
+        margin: auto;
+        text-align: center;
+    }
+
+    #btn button {
+        padding: 8px 15px;
+        border-radius: 5px;
+        color: brown;
+    }
+
+    .sub_header {
+        /* border: 1px solid royalblue; */
+        width: 400px;
+        margin: 20px auto;
+    }
+
+    .sub_header img {
+        width: 300px;
+        display: block;
+        margin: auto;
+    }
+
+    .sub_header p {
+        font-size: large;
+        margin-top: 10px;
+    }
+
+    .container {
+        /* border: 1px solid red; */
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+
+    .card {
+        width: 20%;
+        height: 200px;
+        margin-left: 120px;
+        /* border: 1px solid green; */
+        float: left;
+    }
+
+    .card img {
+        width: 60%;
+        height: auto;
+        border-radius: 50%;
+
+    }
+
+    .card h3 {
+        text-align: center;
+        /* border: 1px solid red; */
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .second_banner {
+        background-color: aquamarine;
+        height: 590px;
+        margin-top: 10px;
+    }
+
+    .second_banner {
+        clear: both;
+        background-image: url(./image/eCommerce-2.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top: 10px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 210px;
+    }
+
+    .innder_div {
+        padding: 90px;
+        /* border: 1px solid red; */
+        background-color: #FFFFFF;
+        height: 370px;
+        border-radius: 10px;
+    }
+
+    .innder_div h2{
+    
+    padding: 10px;
+    font-size: 35px;
+    color: #622222;
+    font-weight: 800;
+    }
+
+    .innder_div p {
+        padding: 10px;
+        color: #622222;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .innder_div .btn {
+        color: black;
+        border: none;
+        background-color: lightgray;
+        border-radius: 14px;
+        padding: 10px 30px;
+
+        margin: 20px 0;
+
+
+    }
+
+    .innder_div .btn a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+
+    .btn:hover {
+        background-color: palevioletred;
+    }
+
+    .main_boxes {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .card_1 {
+        width: 20%;
+        box-shadow: 3px 4px 7px 4px grey;
+        border-radius: 10px;
+    }
+
+    .card_1 img {
+        width: 50%;
+    }
+
+    .card_1content h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .card_1content p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .boxes {
+        margin-top: 10PX;
+        /* border: 2px solid red ; */
+    }
+
+    .main_flutter {
+
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid green; */
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Pages</li>
+                <li>Shop</li>
+                <li>Elements</li>
+                <li>Blog</li>
+                <li>Contact</li>
+
+
+
+
+            </ul>
+            <div>
+                <button>Signup</button>
+                <button>Login</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- start banner -->
+    <div class="banner">
+        <h1>upto <br><span>50%</span> Discount</h1>
+        <h2>Summerlook book-2024</h2>
+        <p>New modern stylist Fashionable Men's wear jeans shirt</p><br>
+        <div id="btn">
+            <button>Explore now</button>
+        </div>
+    </div>
+    <!-- end banner -->
+
+    <div class="sub_header">
+        <h1 style="text-align: center;">Top catagory</h1>
+        <p style="text-align: center;">Follow the most popular trends and get exclusive items from castro shop. </p>
+        <img src="./image/arrow-left-from-line.png" alt="">
+
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="Image/MenWear.webp" alt="">
+            <h3>Gents Collection</h3>
+        </div>
+
+
+        <div class="card">
+            <img src="Image/kidwear.webp" alt="">
+            <h3>Kids Collection</h3>
+        </div>
+
+        <div class="card">
+            <img src="Image/FootWear.webp" alt="">
+            <h3>Footwear Collection</h3>
+
+        </div>
+
+        <div class="card">
+            <img src="./Image/WomenWear.webp" alt="">
+            <h3>Women Collection</h3>
+        </div>
+
+    </div>
+    <div class="second_banner">
+        <div class="innder_div">
+            <h2>End of season clearence sale <br> up to 50%</h2>
+            <p>Welcome to the new range of shaving products from master barber.we have over three deceds of experience
+                in the male gromming industry</p>
+            <button class="btn"> <a href="#"></a>Shop now</button>
+
+        </div>
+
+    </div>
+    <div class="boxes">
+        <div class="main_boxes">
+            <div class="card_1">
+                <img src="./image/delivery-truck.png" alt="">
+                <div class="card_1content">
+                    <h2>Free shipping</h2>
+                    <p>free shipping on order over $100</p>
+                </div>
+            </div>
+            <div class="card_1">
+                <img src="./image/credit-card.png" alt="">
+                <div class="card_1content">
+                    <h2>Secure payment</h2>
+                    <p>We ensure secure payment with PEV</p>
+                </div>
+            </div>
+            <div class="card_1">
+                <img src="./image/phone.png" alt="">
+                <div class="card_1content">
+                    <h2>Support 24hrs</h2>
+                    <p>contact us 24hrs a day,7 days a week</p>
+                </div>
+            </div>
+            <div class="card_1">
+                <img src="./image/return.png" alt="">
+                <div class="card_1content">
+                    <h2>Returns</h2>
+                    <p>simply return it with in 30 days for and exchange</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <Footer>
+        <div class="main_flutter">
+            <div class="flutter">
+                <img src="./image/shopping.png" alt="">
+            </div>
+            <div class="flutter">
+                <h3>Catagory</h3>
+                <p>Men</p>
+                <p>Women</p>
+                <p>Kids</p>
+                <p>Accessories</p>
+                <p>shoes</p>
+            </div>
+            <div class="flutter">
+                <h3>Useful links</h3>
+                <p>News & Tips</p>
+                <p>About Us</p>
+                <p>Terms & Conditions</p>
+                <p>Our Shop</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="flutter">
+                <h3>Contact</h3>
+                <p>470B Rucker wall,</p>
+                <p>Kassandratown,hl</p>
+                <p>+(23212)2312323</p>
+                <p>Shop@gmail.com</p>
+                <img src="./image/facebook-app-symbol.png" alt="">
+                <img src="./image/twitter.png" alt="">
+                <img src="./image/google-plus.png" alt="">
+            </div>
+            <div class="flutter">
+                <h3>Newsletter</h3>
+                <p>470B rucker wall Kassandratown</p>
+                <p>Hl 97554</p>
+                <input type="text">
+                <button class="btn">Subscribe</button>
+            </div>
+        </div>
+    </Footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
